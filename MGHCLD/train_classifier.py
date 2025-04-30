@@ -88,7 +88,6 @@ def train(opt):
     if opt.only_classifier:
         opt.a=opt.b=opt.c=0
         opt.d=1
-        opt.one_loss=True
 
     if opt.one_loss:
         model = First_Classifier(opt,fabric).train()
